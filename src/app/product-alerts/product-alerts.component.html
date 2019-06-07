@@ -1,0 +1,7 @@
+<div *ngIf="product.disponible == 'n'; else elseBlock">
+  <button class="btn-partage btn-notify" (click)="notify.emit()">Me notifier</button>
+  <button class="btn-partage btn-favoris btn-notify" (click)="favorite.emit()">Ajouter aux favoris</button>
+</div>
+<ng-template #elseBlock>
+  <button class="btn-partage btn-favoris btn-notify" (click)="favorite.emit()">Ajouter aux favoris</button>
+</ng-template>

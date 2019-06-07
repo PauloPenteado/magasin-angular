@@ -21,6 +21,22 @@
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
+/** IE10 and IE11 requires the following for the Reflect API. */
+/**
+ * DO NOT REMOVE
+ * By default, Reflect polyfills are auto-included by the CLI and
+ * are required for JIT compilation.  StackBlitz examples are
+ * compiled using JIT.
+ */
+/**
+Paulo Penteado. June 4, 2019. 
+Commenting out the 2 imports belows. Since they affect only IE, I don't think they are useful now
+and they are causing the compile to fail
+ 
+import 'core-js/es6/reflect';
+import 'core-js/es7/reflect';
+*/
+
 /**
  * Web Animations `@angular/platform-browser/animations`
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
@@ -61,3 +77,10 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

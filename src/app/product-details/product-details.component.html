@@ -1,0 +1,14 @@
+<!-- <div *ngIf="product"> -->
+<div *ngIf="product; else elseBlock">
+  <h2>Des détails du produit</h2>
+  <h3>{{ product.name }}</h3>
+  <h4>
+      {{ product.price | currency }} 
+      <button (click)="addToCart(product)" class="btn-partage">Acheter</button>
+  </h4>  
+  <p>{{ product.description }}</p>
+  <img src="{{ product.image}}" width="300px" alt="Image non disponible">
+</div>
+<ng-template #elseBlock>
+    <h2>Le produit n'existe pas</h2>
+</ng-template>
