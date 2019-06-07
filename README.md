@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
+## Setup
+
+First off, set up a local environment for Angular development. 
+It won't take you 5 minutes and the link below can easily guide you through it.
+
+https://angular.io/guide/setup-local
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
